@@ -10,6 +10,11 @@ namespace Day_20_MSTestingREGEXUserRegistration
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("User need to valid First Name \n ");
+            Validation validation = new Validation();
+            validation.FirstNameValidation("Ronit");
+            Console.ReadLine();
+            
         }
     }
 }
