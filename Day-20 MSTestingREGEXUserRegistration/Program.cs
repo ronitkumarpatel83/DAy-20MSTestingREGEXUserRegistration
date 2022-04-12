@@ -40,7 +40,8 @@ namespace Day_20_MSTestingREGEXUserRegistration
                         break;
                     case 5:
                         Console.WriteLine("1.Password minimum 8 character");
-                        string a = Console.ReadLine();                        Validation password = new Validation();
+                        string a = Console.ReadLine();                       
+                        Validation password = new Validation();
                         password.Password(a);
                         break;
                     default: 
