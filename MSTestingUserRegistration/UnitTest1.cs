@@ -11,11 +11,24 @@ namespace MSTestingUserRegistration
         public void GivenFirstName()
         {
             //Arrange
-            Validation validation = new Validation();
+            Validation firstname = new Validation();
             string expected = "Valid";
             string massage = "Ronit";
             //Act
-            string actual = validation.FirstNameValidation(massage);
+            string actual = firstname.FirstNameValidation(massage);
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
+        [TestMethod]
+        public void GivenLastName()
+        {
+            //Arrange
+            Validation lastname = new Validation();
+            string expected = "Valid";
+            string massage = "Patel";
+            //Act
+            string actual = lastname.LastNameValidation(massage);
             //Assert
             Assert.AreEqual(expected, actual);
 

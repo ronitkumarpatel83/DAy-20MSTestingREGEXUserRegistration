@@ -22,6 +22,21 @@ namespace Day_20_MSTestingREGEXUserRegistration
                 Console.WriteLine("Invalid Name : " + FirstName);
                 return "Invalid";
             }
+
+        }
+        public string LastNameValidation(string LastName)
+        {
+            string pattern = "^[A-Z][a-z]{2,}$"; // Creating REGEX pattern
+            if (Regex.IsMatch(LastName, pattern)) //For checking regex are valid or invalid
+            {
+                Console.WriteLine("The Last name is : " + LastName);
+                return "Valid";
+            }
+            else
+            {
+                Console.WriteLine("Invalid Name : " + LastName);
+                return "Invalid";
+            }
         }
     }
 }

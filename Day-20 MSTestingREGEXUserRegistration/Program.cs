@@ -10,11 +10,31 @@ namespace Day_20_MSTestingREGEXUserRegistration
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("User need to valid First Name \n ");
-            Validation validation = new Validation();
-            validation.FirstNameValidation("Ronit");
-            Console.ReadLine();
-            
+            int n = 1;
+            while (n == 1)
+            {
+                Console.WriteLine("1.First Name\n2.Last Name");
+                int choice = Convert.ToInt32(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        Console.WriteLine("User need to valid First Name \n ");
+                        Validation firstname = new Validation();
+                        firstname.FirstNameValidation("Ronit");
+                        break;
+                    case 2:
+                        Console.WriteLine("User need to valid Last Name \n");
+                        Validation lastname = new Validation();
+                        lastname.LastNameValidation("Patel");
+                        break;
+                    default: 
+                        Console.WriteLine("Enter a valid key");
+                        break ;
+                }
+
+                Console.WriteLine("\n Press 1 to Continue or Press any other key to Exit");
+                n = Convert.ToInt32(Console.ReadLine());
+            }
         }
     }
 }
