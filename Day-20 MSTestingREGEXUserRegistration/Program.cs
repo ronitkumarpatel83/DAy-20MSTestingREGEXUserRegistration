@@ -13,7 +13,7 @@ namespace Day_20_MSTestingREGEXUserRegistration
             int n = 1;
             while (n == 1)
             {
-                Console.WriteLine("1.First Name\n2.Last Name");
+                Console.WriteLine("1.First Name\n2.Last Name\n3.Email Validation");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -27,6 +27,11 @@ namespace Day_20_MSTestingREGEXUserRegistration
                         Validation lastname = new Validation();
                         lastname.LastNameValidation("Patel");
                         break;
+                    case 3:
+                        Console.WriteLine("Email Validation");
+                        Validation email = new Validation();
+                        email.EmailValidation("ronitkumarpatel83@gmail.com");
+                        break ;
                     default: 
                         Console.WriteLine("Enter a valid key");
                         break ;

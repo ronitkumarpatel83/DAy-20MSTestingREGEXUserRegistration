@@ -38,5 +38,19 @@ namespace Day_20_MSTestingREGEXUserRegistration
                 return "Invalid";
             }
         }
+        public string EmailValidation(string Email)
+        {
+            string pattern = "^[0-9a-zA-Z]+[./+_-]{0,1}[0-9a-zA-Z]+[@][a-zA-Z0-9-]+[.][a-zA-Z]{2,}([.][a-zA-Z]{2,}){0,1}$"; // Creating REGEX pattern
+            if (Regex.IsMatch(Email, pattern)) //For checking regex are valid or invalid
+            {
+                Console.WriteLine("This is my Email id : " + Email);
+                return "Valid";
+            }
+            else
+            {
+                Console.WriteLine("Invalid email : " + Email);
+                return "Invalid";
+            }
+        }
     }
 }
