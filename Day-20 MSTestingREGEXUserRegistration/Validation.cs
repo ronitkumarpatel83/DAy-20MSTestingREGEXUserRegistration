@@ -66,5 +66,21 @@ namespace Day_20_MSTestingREGEXUserRegistration
                 return "Invalid";
             }
         }
+        public string Password(string pswd)
+        {
+
+            string pattern = "[a-zA-Z]{8}"; // Creating REGEX pattern
+
+            if (Regex.IsMatch(pswd, pattern)) //For checking regex are valid or invalid
+            {
+                Console.WriteLine("My password id is : " + pswd);
+                return "Valid";
+            }
+            else
+            {
+                Console.WriteLine("Invalid password : " + pswd);
+                return "Invalid";
+            }
+        }
     }
 }

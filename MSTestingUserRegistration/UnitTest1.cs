@@ -59,5 +59,18 @@ namespace MSTestingUserRegistration
             Assert.AreEqual(expected, actual);
 
         }
+        [TestMethod]
+        public void GivePassword()
+        {
+            //Arrange
+            Validation email = new Validation();
+            string expected = "Valid";
+            string massage = "abcdefgh";
+            //Act
+            string actual = email.Password(massage);
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }

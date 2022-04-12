@@ -14,6 +14,7 @@ namespace Day_20_MSTestingREGEXUserRegistration
             while (n == 1)
             {
                 Console.WriteLine("1.First Name\n2.Last Name\n3.Email Validation\n4.Mobile Format");
+                Console.WriteLine("5.Password");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -36,6 +37,11 @@ namespace Day_20_MSTestingREGEXUserRegistration
                         Console.WriteLine("Mobile Format");
                         Validation mobile = new Validation();
                         mobile.MobileNumberValidation("91 7008427274");
+                        break;
+                    case 5:
+                        Console.WriteLine("1.Password minimum 8 character");
+                        string a = Console.ReadLine();                        Validation password = new Validation();
+                        password.Password(a);
                         break;
                     default: 
                         Console.WriteLine("Enter a valid key");
