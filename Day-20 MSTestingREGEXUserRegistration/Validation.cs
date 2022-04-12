@@ -69,7 +69,7 @@ namespace Day_20_MSTestingREGEXUserRegistration
         public string Password(string pswd)
         {
 
-            string pattern = "^(?=.*[A-Z])[A-Za-z]{8,}$"; // Creating REGEX pattern
+            string pattern = "^(?=.*[A-Z])(?=.*[0-9])[a-zA-Z0-9]{8,}$"; // Creating REGEX pattern
 
             if (Regex.IsMatch(pswd, pattern)) //For checking regex are valid or invalid
             {

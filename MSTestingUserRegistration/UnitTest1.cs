@@ -65,7 +65,7 @@ namespace MSTestingUserRegistration
             //Arrange
             Validation email = new Validation();
             string expected = "Valid";
-            string massage = "AbCdEfGhIjKl";
+            string massage = "AbCdEfGhIjKl1234";
             //Act
             string actual = email.Password(massage);
             //Assert

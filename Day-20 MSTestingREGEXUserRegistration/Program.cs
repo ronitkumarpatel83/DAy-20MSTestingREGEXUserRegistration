@@ -39,7 +39,7 @@ namespace Day_20_MSTestingREGEXUserRegistration
                         mobile.MobileNumberValidation("91 7008427274");
                         break;
                     case 5:
-                        Console.WriteLine("1.Password minimum 8 character");
+                        Console.WriteLine("-> Password minimum 8 character\n-> Atleast one Upper case\n-> Atleast one numeric");
                         string a = Console.ReadLine();                       
                         Validation password = new Validation();
                         password.Password(a);
