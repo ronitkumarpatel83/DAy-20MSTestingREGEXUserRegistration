@@ -52,5 +52,19 @@ namespace Day_20_MSTestingREGEXUserRegistration
                 return "Invalid";
             }
         }
+        public string MobileNumberValidation(string Number)
+        {
+            string pattern = "^[0-9]{1,3}[ ][0-9]{10}$"; // Creating REGEX pattern
+            if (Regex.IsMatch(Number, pattern)) //For checking regex are valid or invalid
+            {
+                Console.WriteLine("My number id is : " + Number);
+                return "Valid";
+            }
+            else
+            {
+                Console.WriteLine("Invalid number : " + Number);
+                return "Invalid";
+            }
+        }
     }
 }

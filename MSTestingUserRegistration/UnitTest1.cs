@@ -46,5 +46,18 @@ namespace MSTestingUserRegistration
             Assert.AreEqual(expected, actual);
 
         }
+        [TestMethod]
+        public void GiveMobileNumber()
+        {
+            //Arrange
+            Validation email = new Validation();
+            string expected = "Valid";
+            string massage = "91 7008427274";
+            //Act
+            string actual = email.MobileNumberValidation(massage);
+            //Assert
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }
